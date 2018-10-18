@@ -331,19 +331,19 @@ describe('TypeScript template', () => {
       `);
 
       expect(content).toBeSimilarStringTo(`
-        export enum A {
+        export const enum A {
           ONE = 1,
           TWO = 2,
         }
       `);
       expect(content).toBeSimilarStringTo(`
-        export enum B {
+        export const enum B {
           LUKE = "luke",
           YODA = "yoda",
         }
       `);
       expect(content).toBeSimilarStringTo(`
-        export enum C {
+        export const enum C {
           FOO = "FOO",
           BAR = "BAR",
         }
@@ -747,7 +747,7 @@ describe('TypeScript template', () => {
         }
       `);
       expect(content).toBeSimilarStringTo(`
-        export enum MyEnum {
+        export const enum MyEnum {
           A = "A",
           B = "B",
           C = "C",
@@ -888,8 +888,8 @@ describe('TypeScript template', () => {
       expect(content).toContain('export interface Mutation');
       expect(content).toContain('export interface Subscription');
 
-      expect(content).toContain('export enum FeedType');
-      expect(content).toContain('export enum VoteType');
+      expect(content).toContain('export const enum FeedType');
+      expect(content).toContain('export const enum VoteType');
 
       expect(content).toContain('export interface Entry');
       expect(content).toContain('export interface User');
@@ -994,7 +994,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** A list of options for the sort order of the feed */
-        export enum FeedType {
+        export const enum FeedType {
           HOT = "HOT",
           NEW = "NEW",
           TOP = "TOP",
@@ -1002,7 +1002,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** The type of vote to record, when submitting a vote */
-        export enum VoteType {
+        export const enum VoteType {
           UP = "UP",
           DOWN = "DOWN",
           CANCEL = "CANCEL",
@@ -1068,7 +1068,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** A list of options for the sort order of the feed */
-        export enum FeedType {
+        export const enum FeedType {
           HOT = "HOT",
           NEW = "NEW",
           TOP = "TOP",
@@ -1076,7 +1076,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** The type of vote to record, when submitting a vote */
-        export enum VoteType {
+        export const enum VoteType {
           UP = "UP",
           DOWN = "DOWN",
           CANCEL = "CANCEL",
@@ -1246,7 +1246,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** A list of options for the sort order of the feed */
-        export enum FeedType {
+        export const enum FeedType {
           HOT = "HOT",
           NEW = "NEW",
           TOP = "TOP",
@@ -1254,7 +1254,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** The type of vote to record, when submitting a vote */
-        export enum VoteType {
+        export const enum VoteType {
           UP = "UP",
           DOWN = "DOWN",
           CANCEL = "CANCEL",
@@ -1416,7 +1416,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** A list of options for the sort order of the feed */
-        export enum FeedType {
+        export const enum FeedType {
           HOT = "HOT",
           NEW = "NEW",
           TOP = "TOP",
@@ -1424,7 +1424,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** The type of vote to record, when submitting a vote */
-        export enum VoteType {
+        export const enum VoteType {
           UP = "UP",
           DOWN = "DOWN",
           CANCEL = "CANCEL",
@@ -1498,7 +1498,7 @@ describe('TypeScript template', () => {
        `);
       expect(content).toBeSimilarStringTo(`
         /** A list of options for the sort order of the feed */
-        export enum FeedType {
+        export const enum FeedType {
           HOT = "HOT",
           NEW = "NEW",
           TOP = "TOP",
@@ -1506,7 +1506,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** The type of vote to record, when submitting a vote */
-        export enum VoteType {
+        export const enum VoteType {
           UP = "UP",
           DOWN = "DOWN",
           CANCEL = "CANCEL",
@@ -1595,7 +1595,7 @@ describe('TypeScript template', () => {
        `);
       expect(content).toBeSimilarStringTo(`
         /** A list of options for the sort order of the feed */
-        export enum FeedType {
+        export const enum FeedType {
           HOT = "HOT",
           NEW = "NEW",
           TOP = "TOP",
@@ -1603,7 +1603,7 @@ describe('TypeScript template', () => {
       `);
       expect(content).toBeSimilarStringTo(`
         /** The type of vote to record, when submitting a vote */
-        export enum VoteType {
+        export const enum VoteType {
           UP = "UP",
           DOWN = "DOWN",
           CANCEL = "CANCEL",
