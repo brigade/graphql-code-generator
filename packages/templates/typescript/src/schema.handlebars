@@ -63,6 +63,17 @@ export interface {{ toPascalCase name }}{{ toPascalCase ../name }}Args {
 export type {{ toPascalCase name }} = {{#each possibleTypes}}{{ toPascalCase this}}{{#unless @last}} | {{/unless}}{{/each}};
 
 {{/each}}
+{{#if config.schemaType }}
+{{#if types}}
+export interface {{@root.config.interfacePrefix}}Schema {
+  {{#each scalars}}{{~> typeProperty prefix=false }}{{/each}}
+  {{#each types}}{{~> typeProperty prefix=true }}{{/each}}
+  {{#each enums}}{{~> typeProperty prefix=true }}{{/each}}
+  {{#each unions}}{{~> typeProperty prefix=true }}{{/each}}
+  {{#each interfaces}}{{~> typeProperty prefix=true }}{{/each}}
+}
+{{/if}}
+{{/if}}
 {{#if @root.config.schemaNamespace ~}} } {{~/if}}
 {{#ifCond @root.config.resolvers "!==" false }}
 {{#each types}}

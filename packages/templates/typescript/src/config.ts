@@ -4,6 +4,7 @@ import * as schema from './schema.handlebars';
 import * as resolver from './resolver.handlebars';
 import * as documents from './documents.handlebars';
 import * as selectionSet from './selection-set.handlebars';
+import * as typeProperty from './type-property.handlebars';
 import * as fragments from './fragments.handlebars';
 import * as enumTemplate from './enum.handlebars';
 import { EInputType, GeneratorConfig } from 'graphql-codegen-core';
@@ -25,6 +26,7 @@ export const config: GeneratorConfig = {
     resolver,
     documents,
     selectionSet,
+    typeProperty,
     fragments,
     enum: enumTemplate
   },

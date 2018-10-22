@@ -1,0 +1,1 @@
+{{#if @root.config.immutableTypes }}readonly {{/if}}{{ name }}: {{#if prefix }}{{@root.config.interfacePrefix}}{{/if}}{{ toPascalCase name }} {{ toComment description }};

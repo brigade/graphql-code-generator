@@ -101,6 +101,10 @@ This will cause the codegen to output `readonly` properties and `ReadonlyArray`.
 
 This will cause the codegen to output types for resolvers.
 
+### `schemaType` (or `CODEGEN_SCHEMA_TYPE`, default value: `false`)
+
+This will cause the codegen to output a single type that represents the entire schema.
+
 ### `noNamespaces` (or `CODEGEN_NO_NAMESPACES`, default value: `null`)
 
 This will cause the codegen not to use `namespace` in typings
